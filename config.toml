@@ -1,4 +1,44 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = ""
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "My Resume"
 theme = "cv_theme"
+
+[params]
+  LinkedInID = "LinkedInID"
+  GitlabID = "GitlabID"
+  GithubID = "GithubID"
+  TwitterID = "TwitterID"
+  FacebookID = "FacebookID"
+  
+  Name = "My Name"
+  Username = "user"
+  Hostname = "host"
+  BlogURL = "//myblog.me"
+  Email = "me@mymail.me"
+  About = "Software Engineer"
+  Location = "City, Region, Country, Earth"
+  Avatar = "http://placehold.it/400x400"
+  GoogleAnalytics = "GoogleAnalyticsID"
+
+  Skills = [
+      ["Team Work", "100", "users"],
+      ["HTML5", "85", "html5"],
+      ["Fedora", "95", "linux"]
+  ]
+  Career = [
+            ["Company1", "http://www.example.com", "Jul 2015 - Aug 2016", "SW engineer", "job description"],
+            ["Company2", "http://www.example.com", "Jul 2015 - Aug 2016", "HW engineer", "job description"],
+  ]
+  Internships = [
+            ["Company2", "http://www.example.com", "Jan 2015 - Jun 2015", "IT support", "internship description"],
+  ]
+  Education = [
+            ["University1", "http://www.example.es/", "2011 - 2015", "Bachelor of Computer Science"],
+            ["University2", "http://www.example.es/", "2016-2017", "Master’s in Computer Science"],
+  ]
+  Interests = [
+            ["Sports", "futbol-o", ""],
+            ["Books", "book", "https://www.goodreads.com/user"],
+            ["Tv Shows", "television", ""],
+            ["People", "users", ""],
+  ]

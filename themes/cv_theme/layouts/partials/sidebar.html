@@ -1,0 +1,63 @@
+<div class=" avatar-container">
+  {{ with .Site.Params.Avatar }}
+  <img class='pure-img centered-block avatar img-circle' src='{{.}}'>
+  {{ end }}
+  <h3 class="name">{{ upper .Site.Params.Name }}</h1>
+</div>
+
+<div class='sidebar-info'>
+  <div class='sidebar-section'>
+    <h3>Contact</h3>
+    {{ with .Site.Params.Email }}
+      <p><a href="mailto:{{.}}" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i>{{.}}</a></p>
+    {{ end }}
+    {{ with .Site.Params.LinkedInID }}
+      <a href="http://linkedin.com/in/{{.}}" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    {{ end }}
+    {{ with .Site.Params.GitlabID }}
+      <a href="https://gitlab.com/{{.}}" title="GitLab"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
+    {{ end }}
+    {{ with .Site.Params.GithubID }}
+      <a href="http://github.com/{{.}}" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+    {{ end }}
+    {{ with .Site.Params.TwitterID }}
+      <a href="http://twitter.com/{{.}}" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    {{ end }}
+    {{ with .Site.Params.FacebookID }}
+      <a href="http://facebook.com/{{.}}" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    {{ end }}
+  </div>
+  <div class='sidebar-section about-me'>
+    <h3>About me</h3>
+    <div class='pure-g'>
+      <div class='pure-u-1-8'>
+        <i class="fa fa-info" aria-hidden="true"></i>
+      </div>
+      <div class='pure-u-7-8'>
+      {{ with .Site.Params.About}}
+        <p>{{.}}</p>
+      {{ end }}
+      </div>
+    </div>
+    <div class='pure-g'>
+      <div class='pure-u-1-8'>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+      </div>
+      <div class='pure-u-7-8'>
+        {{ with .Site.Params.Location}}
+          <p>{{.}}</p>
+        {{ end }}
+      </div>
+    </div>
+
+  </div>
+  <div class='sidebar-section'>
+    <h3>Skills</h3>
+    {{ range .Site.Params.Skills }}
+    <p><i class="fa fa-{{ index . 2 }}" aria-hidden="true"></i>{{ index . 0 }}</p>
+      <div class="progress">
+        <div class="determinate" style="width: {{ index . 1 }}%;"><i class="fa fa-circle"></i></div>
+      </div>
+    {{ end }}
+  </div>
+</div>
