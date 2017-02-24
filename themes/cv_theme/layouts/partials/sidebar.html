@@ -1,8 +1,8 @@
 <div class=" avatar-container">
   {{ with .Site.Params.Avatar }}
-  <img class='pure-img centered-block avatar img-circle' src='{{.}}'>
+  <img class='pure-img centered-block avatar img-circle' src='{{.}}' alt='me'>
   {{ end }}
-  <h3 class="name">{{ upper .Site.Params.Name }}</h1>
+  <h3 class="name">{{ upper .Site.Params.Name }}</h3>
 </div>
 
 <div class='sidebar-info'>
