@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "My Resume"
 theme = "cv_theme"
 
-# use http://fontawesome.io/icons/ to change icons on skills and interests
+# go to http://fontawesome.io/icons/ to change icons on skills and interests
 
 [params]
   LinkedInID = "LinkedInID"
@@ -16,7 +16,7 @@ theme = "cv_theme"
   Username = "user"
   Hostname = "host"
   BlogURL = "//myblog.me"
-  Email = "me@mymail.me"
+  Email = "me@email.me"
   About = "Software Engineer"
   Location = "City, Region, Country, Earth"
   #Avatar = "https://placehold.it/400x400"
